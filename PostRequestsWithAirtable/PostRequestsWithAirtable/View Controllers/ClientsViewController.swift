@@ -16,7 +16,7 @@ class ClientsViewController: UIViewController {
     
     // MARK: - Private Properties
     
-    private var projects = [Project]() {
+    private var clients = [Client]() {
         didSet {
             projectsTableView.reloadData()
         }
@@ -42,11 +42,11 @@ class ClientsViewController: UIViewController {
     }
     
     private func loadData() {
-        ProjectAPIClient.manager.getProjects { result in
+        ProjectAPIClient.manager.getClients { result in
             DispatchQueue.main.async { [weak self] in
                 switch result {
-                case let .success(projects):
-                    self?.projects = projects
+                case let .success(clients):
+                    self?.clients = clients
                 case let .failure(error):
                     self?.displayErrorAlert(with: error)
                 }
@@ -65,13 +65,13 @@ extension ClientsViewController: UITableViewDelegate {}
 
 extension ClientsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return projects.count
+        return clients.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let project = projects[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ProjectCell", for: indexPath)
-        cell.textLabel?.text = project.name
-        cell.detailTextLabel?.text = project.dueDate.description
+        let client = clients[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "clientCell", for: indexPath)
+        cell.textLabel?.text = client.Name 
+//        cell.detailTextLabel?.text = project.dueDate.description
         return cell
     }
 }

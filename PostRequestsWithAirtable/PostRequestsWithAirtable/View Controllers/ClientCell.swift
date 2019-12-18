@@ -14,8 +14,8 @@ class ClientCell: UITableViewCell {
     @IBOutlet var clientName: UILabel!
     
     
-    func configureCell(for project: Project) {
-        clientName.text = project.name
+    func configureCell(for client: Client) {
+        clientName.text = client.Name
         
     }
 
