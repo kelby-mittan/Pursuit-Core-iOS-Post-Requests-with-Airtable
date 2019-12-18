@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		024C587E23AAA75300E04A96 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C587D23AAA75300E04A96 /* Secrets.swift */; };
+		024C588023AACAF000E04A96 /* ClientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C587F23AACAF000E04A96 /* ClientsViewController.swift */; };
+		024C588223AACC3100E04A96 /* ClientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C588123AACC3100E04A96 /* ClientCell.swift */; };
+		024C588423AAD0B400E04A96 /* AirtableClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C588323AAD0B400E04A96 /* AirtableClient.swift */; };
 		CD01CDB42326B70F002D0255 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD01CDB32326B70F002D0255 /* AppDelegate.swift */; };
 		CD01CDB62326B70F002D0255 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD01CDB52326B70F002D0255 /* ProjectsViewController.swift */; };
 		CD01CDB92326B70F002D0255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD01CDB72326B70F002D0255 /* Main.storyboard */; };
@@ -20,7 +24,6 @@
 		CDEB5DF32326C5E100DE505F /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB5DF22326C5E100DE505F /* NetworkHelper.swift */; };
 		CDEB5DF62326C62200DE505F /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB5DF52326C62200DE505F /* AppError.swift */; };
 		CDEB5DF82326C67200DE505F /* ProjectAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB5DF72326C67200DE505F /* ProjectAPIClient.swift */; };
-		CDEB5DFD2326C78800DE505F /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB5DFC2326C78800DE505F /* Secrets.swift */; };
 		CDEB5DFF2326DCB900DE505F /* CreateProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB5DFE2326DCB900DE505F /* CreateProjectViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		024C587D23AAA75300E04A96 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		024C587F23AACAF000E04A96 /* ClientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsViewController.swift; sourceTree = "<group>"; };
+		024C588123AACC3100E04A96 /* ClientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCell.swift; sourceTree = "<group>"; };
+		024C588323AAD0B400E04A96 /* AirtableClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtableClient.swift; sourceTree = "<group>"; };
 		CD01CDB02326B70F002D0255 /* PostRequestsWithAirtable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostRequestsWithAirtable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD01CDB32326B70F002D0255 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD01CDB52326B70F002D0255 /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +59,6 @@
 		CDEB5DF22326C5E100DE505F /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		CDEB5DF52326C62200DE505F /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		CDEB5DF72326C67200DE505F /* ProjectAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectAPIClient.swift; sourceTree = "<group>"; };
-		CDEB5DFC2326C78800DE505F /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		CDEB5DFE2326DCB900DE505F /* CreateProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProjectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		024C587C23AAA73A00E04A96 /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+				024C587D23AAA75300E04A96 /* Secrets.swift */,
+			);
+			path = Secrets;
+			sourceTree = "<group>";
+		};
 		CD01CDA72326B70F002D0255 = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +110,7 @@
 		CD01CDB22326B70F002D0255 /* PostRequestsWithAirtable */ = {
 			isa = PBXGroup;
 			children = (
-				CDEB5DFB2326C73C00DE505F /* Secrets */,
+				024C587C23AAA73A00E04A96 /* Secrets */,
 				CD01CDD92326B9A0002D0255 /* Supporting Files */,
 				CDEB5DF42326C5EA00DE505F /* Networking */,
 				CD01CDDB2326BA0A002D0255 /* View Controllers */,
@@ -132,6 +146,7 @@
 				CD01CDD32326B819002D0255 /* AirtableResponse.swift */,
 				CD01CDD52326B84A002D0255 /* ProjectWrapper.swift */,
 				CD01CDD72326B8C5002D0255 /* Project.swift */,
+				024C588323AAD0B400E04A96 /* AirtableClient.swift */,
 			);
 			path = "Airtable Model Structs";
 			sourceTree = "<group>";
@@ -141,6 +156,8 @@
 			children = (
 				CD01CDB52326B70F002D0255 /* ProjectsViewController.swift */,
 				CDEB5DFE2326DCB900DE505F /* CreateProjectViewController.swift */,
+				024C587F23AACAF000E04A96 /* ClientsViewController.swift */,
+				024C588123AACC3100E04A96 /* ClientCell.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -153,14 +170,6 @@
 				CDEB5DF52326C62200DE505F /* AppError.swift */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		CDEB5DFB2326C73C00DE505F /* Secrets */ = {
-			isa = PBXGroup;
-			children = (
-				CDEB5DFC2326C78800DE505F /* Secrets.swift */,
-			);
-			path = Secrets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,12 +275,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD01CDD82326B8C5002D0255 /* Project.swift in Sources */,
-				CDEB5DFD2326C78800DE505F /* Secrets.swift in Sources */,
+				024C587E23AAA75300E04A96 /* Secrets.swift in Sources */,
+				024C588223AACC3100E04A96 /* ClientCell.swift in Sources */,
 				CDEB5DFF2326DCB900DE505F /* CreateProjectViewController.swift in Sources */,
 				CDEB5DF82326C67200DE505F /* ProjectAPIClient.swift in Sources */,
+				024C588423AAD0B400E04A96 /* AirtableClient.swift in Sources */,
 				CD01CDB62326B70F002D0255 /* ProjectsViewController.swift in Sources */,
 				CD01CDB42326B70F002D0255 /* AppDelegate.swift in Sources */,
 				CD01CDD62326B84A002D0255 /* ProjectWrapper.swift in Sources */,
+				024C588023AACAF000E04A96 /* ClientsViewController.swift in Sources */,
 				CDEB5DF32326C5E100DE505F /* NetworkHelper.swift in Sources */,
 				CD01CDD42326B819002D0255 /* AirtableResponse.swift in Sources */,
 				CDEB5DF62326C62200DE505F /* AppError.swift in Sources */,
@@ -437,12 +449,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87F72Z6LFG;
 				INFOPLIST_FILE = PostRequestsWithAirtable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pursuit.PostRequestsWithAirtable;
+				PRODUCT_BUNDLE_IDENTIFIER = pursuit.PostRequestsWithAirtable123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -454,12 +468,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87F72Z6LFG;
 				INFOPLIST_FILE = PostRequestsWithAirtable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pursuit.PostRequestsWithAirtable;
+				PRODUCT_BUNDLE_IDENTIFIER = pursuit.PostRequestsWithAirtable123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

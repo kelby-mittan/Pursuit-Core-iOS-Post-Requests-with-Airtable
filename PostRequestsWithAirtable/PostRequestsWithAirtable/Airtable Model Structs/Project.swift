@@ -9,6 +9,8 @@ struct Project: Codable {
     let dueDate: String
     let name: String
     
+    
+    
     enum CodingKeys: String, CodingKey {
         case dueDate = "Due date"
         case name = "Name"
